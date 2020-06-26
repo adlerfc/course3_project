@@ -2,7 +2,7 @@
 title: "Code Book"
 author: "Adler Fonseca de Castro"
 date: "6/25/2020"
-output: pdf_document
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
@@ -39,7 +39,7 @@ The processing steps consisted in:
    2. Tidying the labels by removing the characters "()" and replacing "-" with ".".
 4. Assigining descriptive names for the activities in the data set.
 5. From the data set in step 4, creating a second, independent tidy data set with the average of each variable for each activity and each subject.
-6. Outputing this data set with write.table().
+6. Outputing this data set with write.table() to the tidy_dataset.txt file.
 
 
 
