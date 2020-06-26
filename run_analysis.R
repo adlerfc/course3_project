@@ -72,8 +72,12 @@ measureNames <- names(select(dataset, -c(subject, activity, datatype)) )
 dataset_avg <-  dataset %>% 
                 group_by(activity, subject) %>%
                 summarise(across(measureNames, mean, .names = "avg.{col}"))
-View(dataset)
-View(dataset_avg)
+# View(dataset)
+# View(dataset_avg)
+
+# Output dataset with averages
+
+write.table(dataset_avg, file = "tidy_dataset.txt", row.names = FALSE)
 
 
 
